@@ -16,7 +16,7 @@ type
         hD:arbol1;
     end;
 
-    prestamoL=record
+    prestamoL=record    //prestamo!
         numSocio:integer;
         dia:integer;
         mes:integer;
