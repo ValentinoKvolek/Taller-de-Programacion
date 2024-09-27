@@ -47,7 +47,7 @@ public class Estante {
            return null;
     }
     
-    public Estante(int maxLibros) {
+    public Estante(int maxLibros) {    //resivo un valor maximo que me da el usuario
         this.maxLibros = maxLibros;
         this.vectorLibros= new Libro [maxLibros];
     }
