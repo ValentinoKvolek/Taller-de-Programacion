@@ -56,7 +56,7 @@ public class Parcial1 {
         nuevaEmpresa.asignarEncargado(nuevoEncargado2, 4);
         
         
-        nuevaEmpresa.informar();
+        System.out.println(nuevaEmpresa.toString());
                 
         
     }

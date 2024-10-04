@@ -64,7 +64,7 @@ public abstract class Empleado {
         
         String aux;
         aux=  "Nombre : " + this.getNombre() +
-                " DNI : " +  this.getDni() +  this.sueldoACobrar();
+                " DNI : " +  this.getDni() +" SUELDO: " + this.sueldoACobrar();
         return aux;
     }
     

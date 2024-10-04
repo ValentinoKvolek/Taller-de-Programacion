@@ -74,28 +74,39 @@ public class Empresa {
             getVectorEncargados()[sucursal]  = nuevoEncargado;
     }
     
-   
-    public void informar (){
+    
+    public String toStringAux(){
         
-        String aux;
-            
-        aux=  "Nombre : " + this.getNombre() +
-                " direccion : " +  this.getDireccion() + 
-                    getDirectorEjecutivo().toString();
-        
-        System.out.println(aux);
-        
+        String aux ;
+        aux = " ";
         for (int i = 0 ; i < getnSucursales(); i++){
             
             if(getVectorEncargados()[i] == null){
                
-                System.out.println("Sucursal Libre");
+               aux += " Sucursal Libre " ;
             
             }else
             
-            System.out.println(getVectorEncargados()[i].toString());
+            aux += getVectorEncargados()[i].toString();
         
         }
+        
+        return aux;
+    
+    }
+    
+   
+    public String toString (){
+        
+        String aux;
+            
+        aux =  "Nombre : " + this.getNombre() +
+                " direccion : " +  this.getDireccion() + 
+                    getDirectorEjecutivo().toString() +
+                        toStringAux();
+       
+        
+        return aux;
                       
      
     }

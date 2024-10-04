@@ -74,35 +74,48 @@ public class Chileras extends Coro {
         return aux;
     }
     
-    
-public boolean ordenado() {
-    
-    for (int i = 0; i < hilera; i++) {
-        
-        int tonoFundamental = getCoristas()[i][0].getTonoFundamental(); 
-        
-        for (int j = 0; j < columna ; j++) {
-      
-            if ( getCoristas()[i][j].getTonoFundamental() != tonoFundamental) {
-                return false; 
-            }
-        }
-    }
-    
-    int max = Integer.MAX_VALUE; 
-    
-    for (int i = 0; i < hilera; i++) {
-        
-        int tonoPrimerMiembro = getCoristas()[i][0].getTonoFundamental();
-        if (tonoPrimerMiembro >= max) {
-            return false; // Si el tono actual es mayor o igual al máximo anterior
-        }
-        
-        max = tonoPrimerMiembro; // Actualiza el máximo
-    }
 
-    return true; // Todo está ordenado correctamente
-}
+    public boolean ordenado() {
+
+       int i,j,max;
+       j = 0;
+       i =0;
+       max= 999999;
+       boolean cumple  = true;
+       int tonoActual = getCoristas()[i][0].getTonoFundamental();
+       
+       while ( cumple == true && i < (getDimension() - 1)){
+
+           while(cumple == true && j < (getDimension() - 1)){
+                if(tonoActual != getCoristas()[i][j].getTonoFundamental() ){
+                    cumple = false;
+                }
+                j ++;
+            }
+           j = 0;
+           i++;
+           tonoActual = getCoristas()[i][0].getTonoFundamental();  
+       }
+       i = 0;
+       j= 0;
+       
+       while (cumple == true && i < (getDimension() - 1)){
+           if(max <  getCoristas()[i][0].getTonoFundamental()){
+               cumple=  false;
+           }
+           max= getCoristas()[i][0].getTonoFundamental();
+           i++;
+       }
+       
+   
+       
+       return cumple;
+       
+       
+       
+       
+     }
+
 
 
 
