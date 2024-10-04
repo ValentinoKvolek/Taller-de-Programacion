@@ -42,13 +42,4 @@ public class Encargado extends Empleado{
     
     }
     
-    public String toString (){
-        
-        String aux;
-        aux= super.toString() +
-                    "sueldo a cobrar : " +  this.sueldoACobrar();
-                    
-        return aux;
-    }
-    
 }

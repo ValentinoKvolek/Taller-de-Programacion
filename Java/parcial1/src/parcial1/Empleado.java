@@ -56,7 +56,7 @@ public abstract class Empleado {
     public void setSueldoBasico(double sueldoBasico) {
         this.sueldoBasico = sueldoBasico;
     }
-    
+  
     
     public abstract double sueldoACobrar();
     
@@ -64,7 +64,7 @@ public abstract class Empleado {
         
         String aux;
         aux=  "Nombre : " + this.getNombre() +
-                " DNI : " +  this.getDni() ;
+                " DNI : " +  this.getDni() +  this.sueldoACobrar();
         return aux;
     }
     
