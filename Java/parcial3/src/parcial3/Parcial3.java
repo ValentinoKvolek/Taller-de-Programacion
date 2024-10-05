@@ -31,7 +31,7 @@ public class Parcial3 {
          Butaca nuevaButaca4;
         nuevaButaca4 = new Butaca();
         
-        System.out.println(nuevaFuncion.ocupar(0, 0,nuevaButaca));
+        System.out.println(nuevaFuncion.ocupar(0, 3,nuevaButaca));
         System.out.println (nuevaFuncion.ocupar(4, 2,nuevaButaca2));
         System.out.println (nuevaFuncion.ocupar(2, 0,nuevaButaca3));
         System.out.println( nuevaFuncion.ocupar(4, 2, nuevaButaca4));
@@ -40,7 +40,7 @@ public class Parcial3 {
         
         
                 
-        System.out.println(nuevaFuncion.todasButacas(2));   
+        System.out.println(nuevaFuncion.todasButacas(4));   
         
         nuevaFuncion.desocupar(1);
         
@@ -49,7 +49,7 @@ public class Parcial3 {
         System.out.println("YA PASE EL SEGUNDO");
         
         
-        System.out.println(nuevaFuncion.todasButacas(3));
+        System.out.println(nuevaFuncion.todasButacas(4));
         
         System.out.println(nuevaFuncion.toString());
         
