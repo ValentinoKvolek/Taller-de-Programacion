@@ -22,17 +22,9 @@ public abstract class Alumno {
         this.DNI = DNI;
         this.nombre = nombre;
         this.maxM = MaxMaterias;
-        this.setVector(new Materia [MaxMaterias]);
-    }
-    
-    public Materia[] getVector() {
-        return vector;
+        this.vector= new Materia [MaxMaterias];
     }
 
-    public void setVector(Materia[] vector) {
-        this.vector = vector;
-    }
-    
     public void agregarMateriaAprobada(Materia nuevaMateria){
         
            if(nuevaMateria.aprobada() == true){

@@ -20,7 +20,8 @@ public class Parcial4 {
         
         
         AlumnoGrado nuevoAlumnoGrado = new AlumnoGrado("INFORMATICA", 12345678, "VALENTINO", 5);
-        AlumnoDoctorado nuevoDoctorado = new AlumnoDoctorado("INGENIERIA EN QUIMICA", "UBA", 87654321, "Yoni", 5);
+        
+        AlumnoDoctorado nuevoDoctorado = new AlumnoDoctorado("INGENIER0 EN QUIMICA", "UBA", 87654321, "Yoni", 6);
 
         Materia[] materiasGrado = {
             new Materia("Matemáticas", 7, "2023-10-05"),
@@ -32,7 +33,7 @@ public class Parcial4 {
 
         Materia[] materiasDoctorado = {
             new Materia("Investigación", 8, "2023-10-05"),
-            new Materia("TESIS", 9, "2023-10-05"),
+            new Materia("nashe", 9, "2023-10-05"),
             new Materia("Proyecto Avanzado", 7, "2023-10-05"),
             new Materia("Química Avanzada", 10, "2023-10-05"),
             new Materia("Bioquímica", 5, "2023-10-05")

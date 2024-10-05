@@ -11,55 +11,30 @@ package parcial3;
  */
 public class Butaca {
     
-    private String Descriptor =  "butaca : ";
+    private String Descriptor = " butaca ";
     
-    private double precio = 800 + 100;
+    private double precio = 100 + 800;
     
     private boolean estado = false;
 
-    public Butaca(){};
-
     
-
-    public String getDescriptor() {
-        return Descriptor;
-    }
-
-    public void setDescriptor(String Descriptor) {
-        this.Descriptor = Descriptor;
-    }
-
-    public double getPrecio() {
-        return precio;
-    }
-
-    public void setPrecio(double precio) {
-        this.precio = precio;
-    }
-
-    public boolean isEstado() {
-        return estado;
-    }
-
-    public void setEstado(boolean estado) {
-        this.estado = estado;
-    }
+    public Butaca(){}
    
-    
-    
-    public double ponerPrecio(int f){
-        
-        return this.precio = (this.precio * f);
-        
-    }
-    
-    
     public void cambiarEstado(){
         
         if(this.estado == true ){
+            
              this.estado = false;
         }
+        
         else this.estado= true;
+    }
+    
+    
+    public double precioButaca(int fila){
+        this.precio += this.precio *fila;
+        return (precio);
+        
     }
     
     public String toString(int i, int b){

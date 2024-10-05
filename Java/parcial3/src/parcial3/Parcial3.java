@@ -31,16 +31,23 @@ public class Parcial3 {
          Butaca nuevaButaca4;
         nuevaButaca4 = new Butaca();
         
-        System.out.println(nuevaFuncion.ocupar(0, 3,nuevaButaca));
-        System.out.println (nuevaFuncion.ocupar(4, 2,nuevaButaca2));
-        System.out.println (nuevaFuncion.ocupar(2, 0,nuevaButaca3));
+        
+        
+        
+        System.out.println(nuevaFuncion.ocupar(5, 4,nuevaButaca));
+        System.out.println (nuevaFuncion.ocupar(4, 4,nuevaButaca2));
+        System.out.println (nuevaFuncion.ocupar(2, 1,nuevaButaca3));
         System.out.println( nuevaFuncion.ocupar(4, 2, nuevaButaca4));
         
  
         
         
-                
+        System.out.println("voy a informar todas las butacas de una fila");
+        
         System.out.println(nuevaFuncion.todasButacas(4));   
+        
+        
+        System.out.println("las desocupo");
         
         nuevaFuncion.desocupar(1);
         
@@ -50,6 +57,8 @@ public class Parcial3 {
         
         
         System.out.println(nuevaFuncion.todasButacas(4));
+        
+        
         
         System.out.println(nuevaFuncion.toString());
         
