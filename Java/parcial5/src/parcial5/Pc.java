@@ -26,7 +26,8 @@ public class Pc {
         boolean aux = false;
         
         if(this.consumoXhora < min){
-                
+            
+            min = this.consumoXhora;
             aux = true;
             
         }

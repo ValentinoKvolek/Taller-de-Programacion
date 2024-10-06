@@ -43,7 +43,6 @@ public class SalaPC {
                
                if( (this.vector[i].verEstado() != true) && (this.vector[i].medidorDeConsumo(min) == true) ) {
                    
-                   min = this.vector[i].obtenerConsumo();
                    pcMin = i;
   
                }
