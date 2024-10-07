@@ -27,7 +27,7 @@ public class Estacion {
         
         this.preciom3 = preciom3;
         
-        for (int i = 0;  i <  5; i++ ){
+        for (int i = 0;  i <  6; i++ ){
         
             this.surtidores[i] = new Surtidor(maxVentasXsurtidor);
             
@@ -35,10 +35,10 @@ public class Estacion {
     }
     
     
-    public void AgregarVentas(int n,double monto,int dniNuevo, double m3, String pago ){
-    
-       this.surtidores[n-1].AgregarVentas(dniNuevo,monto,this.preciom3,m3, pago);
-    
+    public void AgregarVentas(int n,int dniNuevo, double m3, String pago ){
+        
+       this.surtidores[(n-1)].AgregarVentas(dniNuevo, preciom3, m3, pago);
+       
     }
     
     public void Verificarm3(double m3Ingresados){
@@ -61,7 +61,7 @@ public class Estacion {
         
         double maxMonto= -99;
         
-        for (int i = 0; i <6; i ++ ){
+        for (int i = 0; i < 6; i ++ ){
             
             if(this.surtidores[i] != null){
         
@@ -75,7 +75,6 @@ public class Estacion {
         }
     
         return maxMonto;
-    
     }
     
  

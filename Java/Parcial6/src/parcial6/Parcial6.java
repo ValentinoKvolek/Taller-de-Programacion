@@ -23,9 +23,14 @@ public class Parcial6 {
         
         Venta v;
         
-        e.AgregarVentas(1, 300, 4284, 40, "debito");
-        e.AgregarVentas(2, 200, 424, 50, "efectivo");
-        e.AgregarVentas(4, 100, 4284, 20, "debito");
+        e.AgregarVentas(1, 4284, 40, "debito");
+        e.AgregarVentas(2, 424, 50, "efectivo");
+        e.AgregarVentas(4, 4284, 20, "debito");
+        e.AgregarVentas(4, 4285234, 20, "debito");
+        e.AgregarVentas(4,  1384, 300, "debito");
+        e.AgregarVentas(6, 1384, 03, "debito");
+  
+           
         
         e.Verificarm3(90);
         

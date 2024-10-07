@@ -28,11 +28,11 @@ public class Surtidor {
     }
     
     
-   public void AgregarVentas(int dniNuevo,double monto, double precioxM3,double m3, String pago){
+   public void AgregarVentas(int dniNuevo ,double precioxM3 ,double m3, String pago){
        
        Venta NuevaVenta;
        
-       NuevaVenta = new Venta(dniNuevo,monto,precioxM3,m3,pago);
+       NuevaVenta = new Venta(dniNuevo,precioxM3,m3,pago);
        
        if (diml < dimf){}{
        
@@ -41,7 +41,6 @@ public class Surtidor {
                 
        }
         
-
     }
    
    
@@ -89,10 +88,11 @@ public class Surtidor {
     
     
     public String toString(int pos){
-    
-        
+   
         String aux;
-        aux = "Surtidor: " + pos + this.servicio + "\n";
+        
+        aux = "Surtidor : " + ( pos + 1 ) + " estado: " + this.servicio + "\n";
+        
         for (int i = 0;  i < diml; i++){
         
             aux += this.vectorVentas[i].toString();

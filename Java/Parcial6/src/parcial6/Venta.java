@@ -16,12 +16,12 @@ public class Venta {
     private double montoAbonado;
     private String metodoDePago;
 
-    public Venta(int DNI, double cantM3cargados, double montoAbonado, double precioxM3, String metodoDePago) {
+    public Venta(int DNI, double precioDelaestacion, double cantLitros, String metodoDePago) {
         
         
         this.DNI = DNI;
         this.cantM3cargados = cantM3cargados;
-        this.montoAbonado = (montoAbonado * precioxM3);
+        this.montoAbonado = (precioDelaestacion * cantLitros);
         this.metodoDePago = metodoDePago;
         
         
