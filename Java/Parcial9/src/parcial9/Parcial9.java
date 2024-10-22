@@ -51,6 +51,7 @@ public class Parcial9 {
         
         System.out.println("TOTAL DE LA COMPRA MAYORISTA : " + c1.totalPrecio()+ "\n");
         System.out.println("TOTAL DE LA COMPRA MINORISTA : " + c2.totalPrecio()+ "\n");
+        
         System.out.println(c1.toString());
         System.out.println(c2.toString());
 

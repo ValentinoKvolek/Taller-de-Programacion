@@ -69,7 +69,9 @@ public class Surtidor {
 
     }
     
-    public double BuscarMax(){
+    public Venta BuscarMax(){
+        
+        Venta auxVenta;
         
         double max =-99; 
         
@@ -78,11 +80,12 @@ public class Surtidor {
             if(this.vectorVentas[i].obternerMonto() > max){
             
                 max  = this.vectorVentas[i].obternerMonto();
+                auxVenta = new Venta(todo loq ue necesita la venta);
             }
         
         }
         
-        return max;
+        return auxVenta;
     
     }
     

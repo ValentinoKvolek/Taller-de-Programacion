@@ -46,6 +46,7 @@ public abstract class Compra  {
        return (total*1.21);
    }
    
+   
    public String toString(){
    
        String aux;
@@ -61,7 +62,7 @@ public abstract class Compra  {
            }
        }
       
-       return aux;
+       return aux; 
        
    }
     

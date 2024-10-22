@@ -57,8 +57,9 @@ public class Estacion {
     
     }
     
-    public double MayorVenta(){
+    public Venta MayorVenta(){
         
+        Venta auxventa;
         double maxMonto= -99;
         
         for (int i = 0; i < 6; i ++ ){
@@ -66,15 +67,17 @@ public class Estacion {
             if(this.surtidores[i] != null){
         
                 if ( this.surtidores[i].BuscarMax() > maxMonto){
+                    
+                   
 
-                    maxMonto = this.surtidores[i].BuscarMax();
+                    auxventa = this.MayorVenta();
 
 
                 }
             }
         }
     
-        return maxMonto;
+        return auxventa;
     }
     
  
